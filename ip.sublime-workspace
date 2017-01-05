@@ -1,0 +1,424 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Phys",
+				"Physics2D"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/selfsame/.config/sublime-text-3/Packages/lumo-repl/Main.sublime-menu",
+			"settings":
+			{
+				"buffer_size": 1206,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ip/fs.cljc",
+			"settings":
+			{
+				"buffer_size": 960,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ip/impl.cljc",
+			"settings":
+			{
+				"buffer_size": 1154,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Lumo 1.0.0\nClojureScript 1.9.293\n Docs: (doc function-name-here)\n Exit: Control+D or :cljs/quit or exit\n\ncljs.user=> (require 'ip.impl :reload)\n(require 'ip.impl :reload)\r\n#error {:message No such namespace: ip.impl, could not locate ip/impl.cljs, ip/impl.cljc, or Closure namespace \"ip.impl\", :data {:tag :cljs/analysis-error}}\ncljs.user=> (require 'ip.impl :reload)\n(require 'ip.impl :reload)\r\n#error {:message No such namespace: ip.impl, could not locate ip/impl.cljs, ip/impl.cljc, or Closure namespace \"ip.impl\", :data {:tag :cljs/analysis-error}}\ncljs.user=> (ns ip.impl\r\n       #_=>   (:import  #?(:cljr (System.IO Directory Path)))\r\n       #_=>   (:require #?(:cljr [clojure.clr.shell :as shell]\r\n       #_=>                :cljs [cljs.nodejs :as nodejs])))\r\nnil\nip.impl=> \r\n\nip.impl=> (def cwd      #?(:cljr #(Directory/GetCurrentDirectory %)\r\n     #_=>                  :cljs process.cwd))\r\n#'ip.impl/cwd\nip.impl=> \r\n\nip.impl=> (:cljs (def path (nodejs/require \"process\")))\r\nnil\nip.impl=> \r\n\nip.impl=> (def cwd      #?(:cljr #(Directory/GetCurrentDirectory %)\r\n     #_=>                  :cljs process.cwd))\r\n#'ip.impl/cwd\nip.impl=> \r\n\nip.impl=> (cwd)\n(cwd)\r\n\"/opt/sublime_text_3\"\nip.impl=> ",
+			"settings":
+			{
+				"buffer_size": 1201,
+				"line_ending": "Unix",
+				"name": "*REPL* [clojure]",
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 174.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/selfsame/dev/ip",
+		"/home/selfsame/dev/ip/ip"
+	],
+	"file_history":
+	[
+		"/home/selfsame/dev/ip/fs.cljc",
+		"/home/selfsame/dev/ip/foo.bar.cljs",
+		"/home/selfsame/.config/sublime-text-3/Packages/SublimeREPL/config/ClojureScript/clojurescript.tmLanguage",
+		"/home/selfsame/dev/ip/impl.cljc",
+		"/home/selfsame/dev/ip/src/impl.cljc",
+		"/home/selfsame/.config/sublime-text-3/Packages/lumo-repl/Main.sublime-menu",
+		"/home/selfsame/Desktop/dna.html",
+		"/home/selfsame/unity/night-farm-returns/Assets/hard/input.clj",
+		"/home/selfsame/unity/arcadia-repl/Assets/repl/analyze.clj",
+		"/home/selfsame/unity/arcadia-repl/Assets/instaparse/core.clj",
+		"/home/selfsame/unity/arcadia-repl/Assets/instaparse/auto_flatten_seq.clj",
+		"/home/selfsame/unity/arcadia-repl/Assets/nightlight/core.clj",
+		"/home/selfsame/unity/arcadia-repl/Assets/ring/core/protocols.clj",
+		"/home/selfsame/unity/arcadia-repl/Assets/ring-core/src/ring/core/protocols.clj",
+		"/home/selfsame/unity/night-farm-returns/Assets/hard/core.clj",
+		"/home/selfsame/unity/night-farm-returns/Assets/game/foo.clj",
+		"/home/selfsame/unity/night-farm-returns/Assets/unity-wave-function-collapse/OverlapWFC.cs",
+		"/home/selfsame/unity/night-farm-returns/Assets/unity-wave-function-collapse/Training.cs",
+		"/home/selfsame/unity/night-farm-returns/Assets/unity-wave-function-collapse/TilePainter.cs",
+		"/home/selfsame/unity/night-farm-returns/Assets/game/data.clj",
+		"/home/selfsame/unity/procadia/arcadia.sublime-project"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 112.0,
+		"where_history":
+		[
+			"/home/selfsame/unity/arcadia-repl/Assets/instaparse"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"getdir",
+			"log",
+			"Character",
+			"java",
+			"joe",
+			"with-env-bindings",
+			"eval",
+			"cmpt",
+			"keep-upright",
+			">v3",
+			"log",
+			"\"shoot\"",
+			"\"shoot",
+			"shoot",
+			"BoxCollider",
+			"z"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/selfsame/.config/sublime-text-3/Packages/lumo-repl/Main.sublime-menu",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1206,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1068,
+								1068
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "ip/fs.cljc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 960,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								182,
+								182
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/arcadia-repl/Clojure.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "ip/impl.cljc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1154,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1032,
+								1032
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/arcadia-repl/Clojure.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1201,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1201,
+								1201
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"auto_indent": false,
+							"detect_indentation": false,
+							"gutter": false,
+							"history_arrows": true,
+							"indent_subsequent_lines": false,
+							"line_numbers": false,
+							"repl": true,
+							"repl_external_id": "clojure",
+							"repl_id": "fb6d295de3b94ddba8dfc8dfa7b02476",
+							"repl_restart_args":
+							{
+								"cmd":
+								{
+									"linux":
+									[
+										"lumo"
+									],
+									"osx":
+									[
+										"lumo"
+									],
+									"windows":
+									[
+										"lumo"
+									]
+								},
+								"cwd":
+								{
+									"linux": "$project",
+									"osx": "$project",
+									"windows": "$project"
+								},
+								"encoding": "utf8",
+								"extend_env":
+								{
+									"INSIDE_EMACS": "1"
+								},
+								"external_id": "clojure",
+								"soft_quit": "\n(. System exit 0)\n",
+								"syntax": "Packages/arcadia-repl/Clojure.tmLanguage",
+								"type": "subprocess"
+							},
+							"repl_sublime2": false,
+							"smart_indent": false,
+							"spell_check": false,
+							"syntax": "Packages/arcadia-repl/Clojure.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 357.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.734765234765,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "ip.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 172.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

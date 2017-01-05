@@ -1,5 +1,8 @@
 (ns ip.fs
-  (:use ip.impl))
+  #?(:cljs (:require [ip.impl :refer-macros [in-dir]]))
+  (:use 
+    [ip.impl :only [shell pathfile pathdir cwd mkdir cd dir-exists? #?@(:cljs [spit slurp])]]
+    #?(:cljs [cljs.reader :only [read-string]])))
 
 (def ns-rx #"^\W*\(\W*ns[^\(\[]+")
 (def fn-rx #"(.+)\..*$")
